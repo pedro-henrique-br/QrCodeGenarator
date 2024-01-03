@@ -1,0 +1,77 @@
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container {
+  border-radius: 0.6rem;
+  background: #ffffff;
+  width: 400px;
+  min-height: 300px;
+  max-width: 400px ;
+  max-height: 600px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#title {
+  margin: 20px 0px 0px 0px;
+}
+
+p {
+  margin: 5px 0px 20px 0px;
+  font-size: 0.9rem;
+}
+
+#container input {
+  text-align: center;
+  height: 50px;
+  width: 330px;
+  min-height: 50px;
+}
+
+#btn-generator {
+  border-radius: 3px;
+  border: solid 1px rgb(31, 31, 31);
+  margin-top: 1rem;
+  background: rgb(14, 146, 20);
+  color: #ffff;
+  font-size: 1rem;
+  height: 50px;
+  min-height: 50px;
+  width: 330px;
+  cursor: pointer;
+}
+
+/* Qr Code */
+
+#qr-code {
+  display: none;
+  padding: 50px;
+  border-radius: 6px;
+  border: solid 1px #d4d4d4;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#qr-code img {
+  height: 200px ;
+}
+
+#container.active #qr-code {
+  display: block;
+}

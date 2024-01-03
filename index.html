@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR Code Genarator</title>
   <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/app.js"></script>
+  <script src="/js/app.js" defer></script>
 </head>
 <body>
-  <h1>Hello World</h1>  
+  <div id="container">
+    <div id="title">
+      <h1>Gerador de QR Code</h1>
+    </div>
+      <p>Insira uma URL ou texto, para criar um QR Code</p>
+    <input id="input-QrCode" type="text" placeholder="Digite a URL ou texto">
+    <button id="btn-generator">Gerar QR Code</button>
+    <div id="qr-code">
+      <img id="img-qr-code" src="/assets/pngwing.com.png" alt="QR Code">
+    </div>
+  </div>  
 </body>
 </html>
